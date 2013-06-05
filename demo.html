@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://lab.hakim.se/ladda/css/ladda.css" />
+    
+    <script data-require="angular.js@1.1.x" src="http://code.angularjs.org/1.1.5/angular.js" data-semver="1.1.5"></script>    
+    <script src="http://lab.hakim.se/ladda/js/ladda.js"></script>
+    <script src="app.js"></script>
+    <script src="directive.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+     <form data-ng-submit="save()">
+      <button id="w" type="submit" class="ladda-button blue zoom-in" ladda data-ng-model="loading">
+          <span class="label">Submit</span>
+          <span class="spinner"></span>
+       </button>
+    </form>
+  </body>
+
+</html>
