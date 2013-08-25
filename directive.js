@@ -1,4 +1,4 @@
-app.directive('ladda', function(){
+angular.module('LaddaDirective',[]).directive('ladda', function(){
   return {
     require: '?ngModel',
     restrict: 'A',
