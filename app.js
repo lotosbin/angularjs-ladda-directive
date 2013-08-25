@@ -1,4 +1,4 @@
-var app = angular.module('plunker', [LaddaDirective]);
+var app = angular.module('plunker', ['LaddaDirective']);
 
 app.controller('MainCtrl', function($scope, $timeout) {
   $scope.save = function(){
